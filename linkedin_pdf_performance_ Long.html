@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Performance Management Transformation - Jeanette Desruisseaux</title>
+    <style>
+        @media print {
+            body { margin: 0; }
+            .no-print { display: none; }
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #2c3e50;
+            background: white;
+            padding: 40px;
+            max-width: 850px;
+            margin: 0 auto;
+        }
+        
+        .header {
+            border-bottom: 4px solid #667eea;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        
+        .header h1 {
+            font-size: 28px;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        
+        .header .consultant-name {
+            font-size: 18px;
+            color: #667eea;
+            font-weight: 600;
+        }
+        
+        .metrics-bar {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+        }
+        
+        .metric {
+            text-align: center;
+            color: white;
+        }
+        
+        .metric-number {
+            font-size: 32px;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .metric-label {
+            font-size: 12px;
+            opacity: 0.95;
+            line-height: 1.3;
+        }
+        
+        .section {
+            margin: 30px 0;
+        }
+        
+        .section h2 {
+            font-size: 20px;
+            color: #667eea;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e3e8ff;
+        }
+        
+        .section p {
+            font-size: 15px;
+            line-height: 1.7;
+            color: #2c3e50;
+            margin-bottom: 12px;
+        }
+        
+        .section ul {
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+        
+        .section li {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 8px;
+            color: #2c3e50;
+        }
+        
+        .highlight-box {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        
+        .highlight-box strong {
+            color: #667eea;
+        }
+        
+        .contact-bar {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 2px solid #e3e8ff;
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 14px;
+        }
+        
+        .print-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 12px 24px;
+            background: #667eea;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 600;
+            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+        }
+        
+        .print-button:hover {
+            background: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <button class="print-button no-print" onclick="window.print()">📄 Save as PDF</button>
+    
+    <div class="header">
+        <h1>Performance Management System Redesign</h1>
+        <div class="consultant-name">Jeanette Desruisseaux | Performance Management Architect & Oracle HCM Expert</div>
+    </div>
+    
+    <div class="metrics-bar">
+        <div class="metric">
+            <span class="metric-number">98%</span>
+            <span class="metric-label">Completion Rate<br>(Up from 60%)</span>
+        </div>
+        <div class="metric">
+            <span class="metric-number">5.7%</span>
+            <span class="metric-label">Engagement<br>Increase</span>
+        </div>
+        <div class="metric">
+            <span class="metric-number">40%</span>
+            <span class="metric-label">Administrative<br>Burden Reduction</span>
+        </div>
+        <div class="metric">
+            <span class="metric-number">99.9%</span>
+            <span class="metric-label">System<br>Uptime</span>
+        </div>
+    </div>
+    
+    <div class="section">
+        <h2>Client Overview</h2>
+        <p><strong>Industry:</strong> Insurance</p>
+        <p><strong>Company Size:</strong> 3,000+ employees</p>
+        <p><strong>Project Duration:</strong> 18 months (Design, Build, Optimize phases)</p>
+        <p><strong>Project Scope:</strong> Complete performance management transformation including technology, process, and organizational change</p>
+    </div>
+    
+    <div class="section">
+        <h2>The Challenge</h2>
+        <p>A large insurance organization faced critical performance management challenges impacting employee engagement and business outcomes:</p>
+        <ul>
+            <li><strong>60% performance review completion rates</strong> creating compliance risks and manager frustration</li>
+            <li>Declining employee engagement scores year-over-year</li>
+            <li>Significant administrative burden on HR team (40+ hours monthly on manual reporting)</li>
+            <li>Legacy system lacked integration between goals, feedback, and development planning</li>
+            <li>No analytics capability for talent decisions or workforce planning</li>
+            <li>Managers viewed performance reviews as compliance checkbox rather than valuable development tool</li>
+        </ul>
+    </div>
+    
+    <div class="highlight-box">
+        <strong>Key Insight:</strong> The organization needed more than technology fixes. They required an integrated talent ecosystem connecting strategic goals, continuous feedback, performance reviews, and development planning into a cohesive employee experience.
+    </div>
+    
+    <div class="section">
+        <h2>Strategic Approach</h2>
+        <p>I led a complete performance management redesign from strategy through implementation using an integrated, phased methodology:</p>
+        
+        <p><strong>Phase 1: Strategy & Design (Months 1-4)</strong></p>
+        <ul>
+            <li>Conducted current-state assessment identifying process gaps and technology limitations</li>
+            <li>Facilitated stakeholder workshops with executives, managers, and employees to define future state</li>
+            <li>Architected integrated framework connecting goals, continuous feedback, reviews, and development planning</li>
+            <li>Designed performance cycle aligned with business planning calendar</li>
+            <li>Created measurement strategy tracking completion rates, engagement, and business impact</li>
+        </ul>
+        
+        <p><strong>Phase 2: Technology Build & Integration (Months 5-10)</strong></p>
+        <ul>
+            <li>Optimized Oracle HCM Performance, Goals, Career Development, and Compensation modules</li>
+            <li>Designed automated workflows reducing manual data entry and administrative burden</li>
+            <li>Partnered with IT and Finance teams for cross-system integration</li>
+            <li>Built Power BI analytics dashboards providing real-time insights to 300+ managers</li>
+            <li>Configured user security, approval chains, and data governance protocols</li>
+            <li>Conducted extensive testing ensuring zero business disruption during deployment</li>
+        </ul>
+        
+        <p><strong>Phase 3: Change Management & Deployment (Months 8-14)</strong></p>
+        <ul>
+            <li>Designed comprehensive change management strategy using Prosci methodology</li>
+            <li>Created executive sponsorship model ensuring visible leadership support</li>
+            <li>Developed training programs for 500+ managers on new processes and technology</li>
+            <li>Built communication plan with targeted messaging for different stakeholder groups</li>
+            <li>Established manager champion network for peer-to-peer support</li>
+            <li>Deployed in phased approach with pilot groups before full rollout</li>
+        </ul>
+        
+        <p><strong>Phase 4: Optimization & Sustainment (Months 12-18)</strong></p>
+        <ul>
+            <li>Monitored adoption metrics and addressed friction points in real-time</li>
+            <li>Refined workflows based on user feedback and usage patterns</li>
+            <li>Established continuous improvement process for ongoing optimization</li>
+            <li>Built self-service support resources reducing HR ticket volume</li>
+            <li>Created long-term measurement framework tracking sustained business impact</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Results Delivered</h2>
+        <p>The performance management transformation delivered exceptional results across completion, engagement, efficiency, and system reliability:</p>
+        
+        <p><strong>Completion & Adoption:</strong></p>
+        <ul>
+            <li>Achieved <strong>98% performance review completion rates</strong> (38-point improvement from 60%)</li>
+            <li>Sustained 95%+ completion rates in subsequent performance cycles</li>
+            <li>Reduced time-to-completion from average 45 days to 21 days</li>
+        </ul>
+        
+        <p><strong>Employee Engagement:</strong></p>
+        <ul>
+            <li>Delivered <strong>5.7% employee engagement increase</strong> measured through annual survey</li>
+            <li>Achieved <strong>2.4-point eNPS improvement</strong> specifically on performance management questions</li>
+            <li>Manager satisfaction with performance tools increased from 52% to 87%</li>
+        </ul>
+        
+        <p><strong>Operational Efficiency:</strong></p>
+        <ul>
+            <li><strong>40% reduction in administrative burden</strong> through automated workflows and dashboards</li>
+            <li>Eliminated 40+ hours of monthly manual reporting for HR team</li>
+            <li>Reduced HR support tickets related to performance management by 65%</li>
+        </ul>
+        
+        <p><strong>System Performance & Quality:</strong></p>
+        <ul>
+            <li>Maintained <strong>99.9% system uptime</strong> across all performance cycles</li>
+            <li><strong>Zero business disruption</strong> during implementation and deployment</li>
+            <li>Improved data accuracy by 15% through validation rules and data governance</li>
+            <li>Achieved 96% stakeholder approval rating across executive levels</li>
+        </ul>
+    </div>
+    
+    <div class="highlight-box">
+        <strong>Client Testimonial:</strong> "The redesigned performance management system transformed how our managers and employees think about performance conversations. It's no longer a compliance exercise - it's genuinely become part of how we develop talent and drive business results."
+    </div>
+    
+    <div class="section">
+        <h2>Key Success Factors</h2>
+        <ul>
+            <li><strong>Integrated ecosystem design:</strong> Connected goals, feedback, reviews, and development into cohesive experience</li>
+            <li><strong>User-centric approach:</strong> Prioritized manager and employee experience over administrative convenience</li>
+            <li><strong>Strategic timing:</strong> Aligned performance cycles with business planning calendar for relevance</li>
+            <li><strong>Comprehensive change management:</strong> Executive sponsorship + manager training + champion network</li>
+            <li><strong>Data-driven optimization:</strong> Real-time analytics enabling proactive intervention and continuous improvement</li>
+            <li><strong>Phased deployment:</strong> Pilot testing with refinement before full rollout minimized risk</li>
+        </ul>
+    </div>
+    
+    <div class="section">
+        <h2>Technology & Tools Utilized</h2>
+        <p><strong>Core Platform:</strong> Oracle HCM Cloud (Performance Management, Goals, Career Development, Compensation modules)</p>
+        <p><strong>Analytics:</strong> Power BI dashboards integrated with Oracle HCM data</p>
+        <p><strong>Integration:</strong> Cross-system integration with HRIS, payroll, and learning management systems</p>
+        <p><strong>Methodology:</strong> Prosci Change Management, Agile project management, User-centered design</p>
+    </div>
+    
+    <div class="section">
+        <h2>Skills & Expertise Applied</h2>
+        <p><strong>Core Competencies:</strong> Performance Management Systems, Oracle HCM Optimization, Integrated Talent Ecosystem Design, People Analytics, Change Management</p>
+        <p><strong>Technical Skills:</strong> Oracle HCM Cloud Administration, Power BI Dashboard Development, HRIS Integration, Data Governance, Workflow Automation</p>
+        <p><strong>Strategic Skills:</strong> Stakeholder Management, Executive Sponsorship Development, Manager Enablement, Continuous Improvement Methodology</p>
+    </div>
+    
+    <div class="section">
+        <h2>Replicable Methodology</h2>
+        <p>This transformation approach is proven and replicable across industries and platforms:</p>
+        <ul>
+            <li>Applicable to Oracle HCM, Workday, or other enterprise HRIS platforms</li>
+            <li>Scalable for organizations from 1,000 to 10,000+ employees</li>
+            <li>Adaptable to various performance management philosophies (annual, continuous, hybrid)</li>
+            <li>Integrated with other talent processes (succession, compensation, learning)</li>
+        </ul>
+    </div>
+    
+    <div class="contact-bar">
+        Jeanette Desruisseaux | Salt Lake City, Utah<br>
+        jflorxnt@gmail.com | 757-768-3011<br>
+        LinkedIn: linkedin.com/in/jeanettedesruisseaux
+    </div>
+</body>
+</html>
